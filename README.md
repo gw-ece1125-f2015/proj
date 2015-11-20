@@ -1,9 +1,10 @@
 # Project - BFF Book - Part 1
 
 Assigned: November 20th, 2015.
+
 Due: Monday, November 30th, 2015 11:59:59 PM.
 
-Introduction
+# Introduction
 BFF book is the hotest social networking app. Ever. You form BFF (best friend fornow) connections with other users and there a ranked popularity list that sorts users based on the number of bffs each has. You have been hired to write the software to make the BFF application work.
 (Later on, we will add a fine-grained privacy model where the amount of your information visible to another user depends on the number of bff connections between you and the other user.)
 
