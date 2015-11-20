@@ -11,7 +11,7 @@ BFF book is the hotest social networking app. Ever. You form BFF (best friend fo
 
 Your job is complicated because bff connections can be constantly created or destroyed and this affects the ranked popularity list. You must check the permissions for parts of a profile (name, list of bffs, summary, full-profile) private based on the bff distance between two users.
 
-Command-line Arguments
+# Command-line Arguments
 Your program should be invoked like this example:
 ```
 ./bffbook input_file.txt [max-users]
@@ -19,7 +19,7 @@ Your program should be invoked like this example:
 The command-line arguments are:
 argv[0]: bffbok
 argv[1]: input_file.txt – The input file specifying bff events
-argv[2]: 4 – The maxiumum number of BFF Book users, defaults to 1000.
+argv[2]: The maxiumum number of BFF Book users, defaults to 1000.
 ```
 
 # Input File Format

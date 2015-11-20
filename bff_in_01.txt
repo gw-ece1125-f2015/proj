@@ -1,0 +1,14 @@
+# This line is a comment.
+create_user 0, "A", "S0", "P0"
+create_user 1, "B", "S1", "P1"
+create_user 2, "C", "S2", "P2"
+create_user 3, "D", "S3", "P3"
+create_user 4, "E", "S4", "P4"
+bff 0, 4
+bff 1, 0
+bff 2, 1
+bff 3, 2
+bff 4, 3
+unbff 0, 4
+rank
+rank
