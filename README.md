@@ -59,12 +59,14 @@ support deletions. In order to make this feasible, you must add parent
 pointers into your tree nodes, in addition to the left and right child
 pointers:
 
+```
 struct tree_node {
 	tree_data_t data;
 	struct tree_node *left;
 	struct tree_node *right;
 	struct tree_node *parent;
 };
+```
 
 You will also have to write your own cmp function to compare two
 users, first by bff count, and if there is a tie, then by userid.
