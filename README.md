@@ -68,6 +68,9 @@ struct tree_node {
 };
 ```
 
+We have provided you a tree_validate function to help you verify the
+correctness of your implementation.
+
 You will also have to write your own cmp function to compare two
 users, first by bff count, and if there is a tie, then by userid.
 

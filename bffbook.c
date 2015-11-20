@@ -38,6 +38,16 @@ int tree_validate(struct tree_node *node)
 	if (node == NULL)
 		return 0;
 
+	if (node->left && node->left->parent != node) {
+		printf("Sanity check failed for node %p node->left %p, node->left->parent != node.\n", node, node->left);
+		return -1;
+	}
+
+	if (node->right && node->right->parent != node) {
+		printf("Sanity check failed for node %p node->right %p, node->right->parent != node.\n", node, node->right);
+		return -1;
+	}
+
 	if (node->left && bff_user_cmp(&node->left->data.key, &node->data.key) >= 0) {
 		printf("Sanity check failed for node %p, node->left >= node.\n", node);
 		return -1;
