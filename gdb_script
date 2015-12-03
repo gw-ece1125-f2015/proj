@@ -1,0 +1,12 @@
+set pagination off
+set logging on
+
+!echo set \$bp_line=$(grep -n "printf(\"Name" bffbook.c | cut -d":" -f1) > var.gdb
+source var.gdb
+set $bp_line=1+$bp_line
+
+dprintf bffbook.c:$bp_line,"\t\tParent: %s ",node->parent ? node->parent->data.name : "NULL"
+dprintf bffbook.c:$bp_line,"Left: %s ",node->left ? node->left->data.name : "NULL"
+dprintf bffbook.c:$bp_line,"Right: %s\n",node->right ? node->right->data.name : "NULL"
+
+r bff_in_01.txt
