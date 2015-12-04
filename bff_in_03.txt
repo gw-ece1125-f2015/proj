@@ -1,0 +1,14 @@
+# This line is a comment.
+create_user 0, "Mark Guckerburg", "Summary: I am an individual.", "Profile: P0"
+create_user 1, "Jake Guckerburg", "Summary: I am an individual.", "Profile: P1"
+create_user 2, "Tim Guckerburg", "Summary: I am an individual.", "Profile: P2"
+bff 1, 2
+create_user 3, "Bob Guckerburg", "Summary: I am an individual.", "Profile: P3"
+read 0, 1, profile
+read 0, 2, profile
+read 1, 2, profile
+rank
+rank
+rank
+delete_user 1
+delete_user 0
